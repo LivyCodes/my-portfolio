@@ -2,36 +2,49 @@ body {
   background-image: url(https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
 }
-header {
-  padding: 5px;
-  margin: 10px;
-}
 
 h1 {
   text-align: right;
   font-size: 5em;
   margin-bottom: auto;
+  color: #3e2607;
 }
-ul {
-  list-style: none;
-  justify-content: right;
-  margin-right: 5px;
-  text-align: right;
-}
-li {
-  justify-content: right;
-  display: inline;
-  padding: 7px;
-  font-size: large;
+
+nav {
+  padding-top: 15px;
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-right: 0px;
 }
 a {
   text-decoration: none;
+  color: #3e2607;
+  position: relative;
+  font-size: large;
+  padding: 0 10px;
+  cursor: pointer;
 }
-a:hover {
-  color: blueviolet;
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: #3e2607;
+  transition: 0.5s;
 }
-button {
-  margin: 5px;
-  border: 1px solid grey;
-  border-radius: 3px;
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+
+a:hover:after,
+a:hover:before {
+  width: 100%;
 }
