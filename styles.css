@@ -1,0 +1,7 @@
+body {
+  background-image: url(https://img.freepik.com/premium-photo/laptop-headphones-yellow-background_23-2148210394.jpg);
+  background-size: cover;
+}
+h1 {
+  justify-content: flex-end;
+}
