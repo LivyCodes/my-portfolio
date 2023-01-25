@@ -6,16 +6,16 @@ body {
 .right-col {
   float: right;
   margin-bottom: 100px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 h1 {
-  font-size: 90px;
+  font-size: 85px;
   text-align: right;
   line-height: 110px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   color: #3e2607;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 nav {
