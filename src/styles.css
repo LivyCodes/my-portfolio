@@ -12,7 +12,7 @@ h1 {
 
 nav {
   padding-top: 15px;
-  width: 40vw;
+  width: 60vw;
   display: flex;
   justify-content: space-around;
   margin: auto;
@@ -48,4 +48,26 @@ a:before {
 a:hover:after,
 a:hover:before {
   width: 100%;
+}
+.btn {
+  background-color: transparent;
+  color: #3e2607;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  font-size: large;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #3e2607;
+}
+.dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+.dropdown-item {
+  background-color: transparent;
 }
