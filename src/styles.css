@@ -1,3 +1,6 @@
+:root {
+  --primary-color: #3e2607;
+}
 body {
   background-image: url(https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
@@ -14,7 +17,7 @@ h1 {
   line-height: 110px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  color: #3e2607;
+  color: var(--primary-color);
   margin-top: 25px;
 }
 
@@ -29,7 +32,7 @@ nav {
 }
 a {
   text-decoration: none;
-  color: #3e2607;
+  color: var(--primary-color);
   position: relative;
   font-size: large;
   padding: 0 10px;
@@ -41,7 +44,7 @@ a:after {
   position: absolute;
   height: 3px;
   width: 0;
-  background: #3e2607;
+  background: var(--primary-color);
   transition: 0.5s;
 }
 a:after {
@@ -59,7 +62,7 @@ a:hover:before {
 }
 .btn {
   background-color: transparent;
-  color: #3e2607;
+  color: var(--primary-color);
   border: none;
   text-decoration: none;
   position: relative;
@@ -70,7 +73,7 @@ a:hover:before {
 
 .btn:hover {
   background-color: transparent;
-  color: #3e2607;
+  color: var(--primary-color);
 }
 .dropdown-menu {
   background-color: transparent;
