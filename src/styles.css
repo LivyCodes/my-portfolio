@@ -23,7 +23,7 @@ h1 {
   padding-top: 15px;
   width: 50vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: auto;
   margin-right: 0px;
   font-family: "Sen", sans-serif;
@@ -57,6 +57,16 @@ a:before {
 a:hover:after,
 a:hover:before {
   width: 100%;
+}
+.nav-link {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  text-decoration: none;
+  position: relative;
+  font-size: large;
+  padding: 0 10px;
+  cursor: pointer;
 }
 .btn {
   background-color: transparent;
