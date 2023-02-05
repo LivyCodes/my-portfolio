@@ -3,6 +3,9 @@
 }
 body {
   background-image: url(/images/portfolio-backg.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -10,9 +13,9 @@ body {
   float: right;
 }
 h1 {
-  font-size: 85px;
+  font-size: 7vw;
   text-align: right;
-  line-height: 110px;
+  line-height: 7vw;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   color: var(--primary-color);
@@ -89,4 +92,7 @@ a:hover:before {
 }
 .dropdown-item {
   background-color: transparent;
+}
+.right-col {
+  display: grid;
 }
