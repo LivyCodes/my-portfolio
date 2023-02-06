@@ -1,21 +1,49 @@
 :root {
   --primary-color: #3e2607;
 }
-body {
-  background-image: url(/images/portfolio-backg.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.carousel {
+  z-index: -99;
+}
+
+.carousel .carousel-item {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.carousel .one {
+  background: url(/images/portfolio-backg.jpeg);
   background-size: cover;
+  -moz-background-size: cover;
+}
+.carousel .two {
+  background: url(https://media.istockphoto.com/id/1173741303/photo/music-headphones.jpg?s=170667a&w=0&k=20&c=BQP6ZP367RShiGFCjBIAPkqBzuNIgHYrh6ECtiKjtvM=);
+  background-size: cover;
+  -moz-background-size: cover;
+}
+.carousel .three {
+  background: url(https://media.istockphoto.com/id/1035679154/photo/banner-with-white-earphones-on-pink-background.jpg?b=1&s=170667a&w=0&k=20&c=bKJwbXak7k1pSTTcBvqs76Y9-ZWKal2d-tWlN4A1Jlc=);
+  background-size: cover;
+  -moz-background-size: cover;
+}
+.carousel .active.left {
+  left: 0;
+  opacity: 0;
+  z-index: 2;
 }
 
 .right-col {
   float: right;
+  margin-top: auto;
 }
 h1 {
   font-size: 7vw;
   text-align: right;
-  line-height: 7vw;
+  line-height: 100%;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   color: var(--primary-color);
@@ -35,8 +63,8 @@ a {
   text-decoration: none;
   color: var(--primary-color);
   position: relative;
-  font-size: large;
-  padding: 0 10px;
+  font-size: 2vw;
+  padding: auto;
   cursor: pointer;
 }
 a:before,
@@ -92,6 +120,7 @@ a:hover:before {
 }
 .dropdown-item {
   background-color: transparent;
+  font-size: 1.2vw;
 }
 .right-col {
   display: grid;
